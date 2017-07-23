@@ -1,13 +1,10 @@
 #!/usr/bin/env bash
-##guessinggame
+## guessinggame
 
 function askUser {
-
-	echo "Please guess the number of files in your current directory en press Enter"
+	echo "Please guess how many files are in your current directory and then press Enter"
 	read response
-#	echo "Your guess is $response"
 	let dif=$response-$(ls | wc -l)
-	#echo $dif
 }
 
 dif=1
