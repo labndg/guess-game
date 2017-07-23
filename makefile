@@ -1,7 +1,7 @@
 all: README.md
 
 README.md: guessinggame.sh
-	echo "#Guessing Game Project" > README.md
+	echo "# Guessing Game Project" > README.md
 	date >> README.md
 	echo "Lines: " >> README.md
 	cat guessinggame.sh | wc -l >> README.md
